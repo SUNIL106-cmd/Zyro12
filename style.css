@@ -8,7 +8,7 @@
 body {
   font-family: "Times New Roman", serif;
   line-height: 1.6;
-  color: #e0e0e0; /* light text for dark mode */
+  color: #eee3e3; /* light text for dark mode */
   background: #121212; /* dark background */
 }
 
@@ -29,7 +29,7 @@ header {
 header .logo { font-size: 1.5rem; font-weight: bold; }
 header nav a {
   margin: 0 15px;
-  color: #fff;
+  color: #e1d5d5;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
@@ -68,7 +68,7 @@ header nav a:hover { color: #ffcc00; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #eadbdb;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
   z-index: 10;
@@ -80,11 +80,13 @@ header nav a:hover { color: #ffcc00; }
 /* ===== ABOUT SECTION ===== */
 
 /* ABOUT SECTION WITH BACKGROUND IMAGE & DARK OVERLAY */
+
+
 #about {
   padding: 100px 50px;
   text-align: center;
-  color: #e0e0e0;
-  background: url('art1.png') no-repeat center center;
+  color: #000000;
+  background: url('images/back.png') no-repeat center center;
   background-size: cover;           /* image pura section cover kare */
   background-attachment: fixed;     /* optional parallax feel */
   position: relative;
