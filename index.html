@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zyro Magazine</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -22,19 +23,25 @@
   <!-- ===== HERO SECTION ===== -->
   <section class="hero">
     <div class="slider">
-      <img src="images/img26.png" alt="Fashion">
-      <img src="images/img30.png" alt="Model">
-      <img src="images/img29.png" alt="UFC">
-      <img src="images/img28.png" alt="Nature">
-      <img src="images/img27.png" alt="Animal">
-      <img src="images/img31.png" alt="Books">
-      <!-- duplicate for smooth infinite scroll -->
-      <img src="images/img25.png" alt="Fashion">
-      <img src="images/img24.png" alt="Model">
-      <img src="images/img23.png" alt="UFC">
-      <img src="images/img22.png" alt="Nature">
-      <img src="images/img21.png" alt="Animal">
-      <img src="images/img20.png" alt="Books">
+      <div class="slide-track">
+        <img src="images/img26.png" alt="Fashion">
+        <img src="images/img30.png" alt="Model">
+        <img src="images/img29.png" alt="UFC">
+        <img src="images/img28.png" alt="Nature">
+        <img src="images/img27.png" alt="Animal">
+        <img src="images/img31.png" alt="Books">
+        <img src="images/img25.png" alt="Fashion">
+        <img src="images/img24.png" alt="Model">
+        <!-- Repeat images for continuous loop -->
+        <img src="images/img26.png" alt="Fashion">
+        <img src="images/img30.png" alt="Model">
+        <img src="images/img29.png" alt="UFC">
+        <img src="images/img28.png" alt="Nature">
+        <img src="images/img27.png" alt="Animal">
+        <img src="images/img31.png" alt="Books">
+        <img src="images/img24.png" alt="Fashion">
+        <img src="images/img25.png" alt="Model">
+      </div>
     </div>
     <div class="hero-text">
       <h1>Zyro Magazine</h1>
@@ -82,24 +89,41 @@
         <img src="images/img12.png" alt="Article1">
         <div class="article-content">
           <h4>Bold Fashion Trends</h4>
-          <p>Step into the world of bold fashion trends where style meets audacity. From futuristic streetwear to edgy runway statements, explore the designs that are reshaping the fashion landscape. Uncover the inspiration behind these daring looks and see how they set the stage for tomorrow’s style icons. Stay ahead of the curve and let your wardrobe speak volumes about your personality.</p>
-          <a href="#">Read More</a>
+          <p class="short-text">
+            Step into the world of bold fashion trends where style meets audacity...
+          </p>
+          <p class="full-text">
+            Step into the world of bold fashion trends where style meets audacity. From futuristic streetwear to edgy runway statements, explore the designs that are reshaping the fashion landscape. Uncover the inspiration behind these daring looks and see how they set the stage for tomorrow’s style icons. Stay ahead of the curve and let your wardrobe speak volumes about your personality.
+          </p>
+          <a href="#" class="read-more">Read More</a>
         </div>
       </div>
+
       <div class="article-card">
         <img src="images/img10.png" alt="Article2">
         <div class="article-content">
           <h4>Nature's Wonders</h4>
-          <p>Discover the breathtaking beauty of our planet’s hidden gems. From towering mountains and lush forests to cascading waterfalls and serene rivers, Nature’s Wonders inspire awe and remind us of the planet’s unmatched splendor. Dive deep into the mysteries of the wild and explore landscapes that feel almost otherworldly. Every corner holds a story waiting to be uncovered.</p>
-          <a href="#">Read More</a>
+          <p class="short-text">
+            Discover the breathtaking beauty of our planet’s hidden gems...
+          </p>
+          <p class="full-text">
+            Discover the breathtaking beauty of our planet’s hidden gems. From towering mountains and lush forests to cascading waterfalls and serene rivers, Nature’s Wonders inspire awe and remind us of the planet’s unmatched splendor. Dive deep into the mysteries of the wild and explore landscapes that feel almost otherworldly. Every corner holds a story waiting to be uncovered.
+          </p>
+          <a href="#" class="read-more">Read More</a>
         </div>
       </div>
+
       <div class="article-card">
         <img src="images/img15.png" alt="Article3">
         <div class="article-content">
           <h4>Sports Highlights</h4>
-          <p>Experience the thrill of the game with the latest sports highlights. From record-breaking performances to unforgettable moments of triumph, witness the energy, skill, and determination of top athletes. Whether it’s football, basketball, or extreme sports, these highlights capture the spirit of competition and the power of human perseverance. Don’t miss the action!</p>
-          <a href="#">Read More</a>
+          <p class="short-text">
+            Experience the thrill of the game with the latest sports highlights...
+          </p>
+          <p class="full-text">
+            Experience the thrill of the game with the latest sports highlights. From record-breaking performances to unforgettable moments of triumph, witness the energy, skill, and determination of top athletes. Whether it’s football, basketball, or extreme sports, these highlights capture the spirit of competition and the power of human perseverance. Don’t miss the action!
+          </p>
+          <a href="#" class="read-more">Read More</a>
         </div>
       </div>
     </div>
