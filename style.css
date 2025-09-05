@@ -160,6 +160,167 @@ header nav a:hover {
 #about h2 { font-size: 3rem; margin-bottom: 20px; }
 #about p { font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px; }
 
+/* 
+//MODEL OF WEEK  */
+/* ===== MODEL OF THE DAY ===== */
+/* ===== MODEL OF THE WEEK ===== */
+/* ===== MODEL OF THE WEEK ===== */
+/* ===== MODEL OF THE WEEK ===== */
+/* #model-day { background: url('images/bg222.mp4') no-repeat center center / cover; } */
+#model-day {
+  position: relative;
+  overflow: hidden;
+}
+
+#model-day .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* pura section cover ho jaye */
+  z-index: 0;
+  opacity: 0.1; /* video thoda dim ho jaye taaki content readable ho */
+}
+
+#model-week-title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px; /* spacing optional */
+  color: #ffcc00;      /* bright heading color */
+  font-size: 2.5rem;   /* bada aur prominent */
+  font-weight: bold;
+}
+
+#model-week {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 20px;
+  min-height: 600px; /* section ki minimum height fix */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+}
+
+#model-week .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+
+.model-week-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* model ke bich gap */
+}
+
+/* Single model highlight */
+.model-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.model-highlight.reverse {
+  flex-direction: column-reverse;
+}
+
+/* Image */
+.model-img img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.model-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Article */
+.model-article {
+  max-width: 500px;
+  text-align: center;
+}
+
+.model-article h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.model-article .quote {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.model-article .about {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.model-article .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.model-article .btn:hover {
+  background: #e6b800;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .model-week-content {
+    gap: 80px;
+  }
+
+  .model-highlight {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .model-highlight.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .model-article {
+    text-align: left;
+  }
+}
+
+/* Responsive video height adjustment */
+@media (max-width: 768px) {
+  #model-week {
+    padding: 80px 15px;
+  }
+
+  .model-img img {
+    max-width: 100%;
+  }
+}
+
+
 /* ===== FEATURES / CATEGORIES ===== */
 #features { padding: 60px 50px; text-align: center; color: #e0e0e0; }
 #features h2 { font-size: 2.5rem; margin-bottom: 40px; }
@@ -263,7 +424,7 @@ footer {
   text-align: center;
   padding: 20px;
   background: #111;
-  color: yellow;
+  color: rgb(196, 196, 167);
 }
 
 footer .socials a {
