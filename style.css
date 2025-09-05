@@ -167,6 +167,35 @@ header nav a:hover {
 /* ===== MODEL OF THE WEEK ===== */
 /* ===== MODEL OF THE WEEK ===== */
 /* #model-day { background: url('images/bg222.mp4') no-repeat center center / cover; } */
+
+.prize {
+  font-size: 1.1rem;       /* thoda bada text */
+  color: #ffd700;          /* gold color highlight */
+  margin: 5px 0 15px 0;    /* upar niche spacing */
+  font-weight: bold;       /* bold for emphasis */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* subtle shadow */
+}
+
+.about-full {
+  display: none;  /* initially hidden */
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background: #e6b800;
+}
+
 #model-day {
   position: relative;
   overflow: hidden;
