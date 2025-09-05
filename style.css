@@ -16,6 +16,7 @@ body {
 header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   background: rgba(20,20,20,0.85);
   color: #fff;
@@ -26,15 +27,70 @@ header {
   z-index: 1000;
 }
 
-header .logo { font-size: 1.5rem; font-weight: bold; }
-header nav a {
-  margin: 0 15px;
-  color: #e1d5d5;
-  text-decoration: none;
+header .logo {
+  font-size: 1.8rem;
   font-weight: bold;
-  transition: 0.3s;
 }
-header nav a:hover { color: #ffcc00; }
+
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #f39c12;
+}
+
+/* ✅ Tablet view */
+@media (max-width: 992px) {
+  header {
+    padding: 12px 30px;
+  }
+
+  header nav {
+    gap: 20px;
+  }
+
+  header nav a {
+    font-size: 0.95rem;
+  }
+}
+
+/* ✅ Mobile view */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;  /* Logo upar, nav neeche */
+    align-items: flex-start; /* left align for mobile */
+    padding: 10px 20px;
+  }
+
+  header .logo {
+    font-size: 1.4rem; /* chhoti screen ke hisaab se */
+    margin-bottom: 10px;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  header nav a {
+    font-size: 1rem;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1); /* thoda stylish look */
+    width: 100%;
+  }
+}
+
+
 
 /* ===== HERO SECTION ===== */
 .hero {
